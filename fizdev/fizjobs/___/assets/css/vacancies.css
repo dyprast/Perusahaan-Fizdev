@@ -1,0 +1,154 @@
+body{
+	font-family: Poppins-Regular;
+}
+.vacancies{
+	padding: 100px 200px;
+	background-color: #fafafa;
+}
+.header{
+	margin: 15px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.header img{
+	width: 200px;
+	height: 50px;
+	display: none;
+}
+
+form{
+	position: relative;
+}
+
+form input{
+	width: 500px;
+	height: 40px;
+	outline: none;
+	padding: 15px;
+	padding-left: 30px;
+	border-radius: 2px;
+	border-style: none;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	transition: .4s all;
+	font-family: Poppins-Regular;
+}
+form input:focus{
+	box-shadow: 0 3px 3px rgba(0,0,0,.1);
+}
+
+form i.fab{
+	position: absolute;
+	font-size: 16px;
+	left: 0;
+	padding: 10px;
+	height: 100%;
+	color: #444;
+}
+
+.content{
+	background-color: #fff;
+	padding: 35px;
+	border: 1px solid #ccc;
+	box-shadow: 0px 5px 5px rgba(0,0,0,.3);
+	position: relative;
+}
+.jobs{
+	border-bottom: 1px solid #ccc;
+	padding: 15px;
+	position: relative;
+}
+.label .header-label{
+	color: #333;
+}
+.header-label a{
+	color: #007bff;
+	text-decoration: none;
+}
+.header-label a:hover{
+	color: #001bff;
+}
+.header-label p{
+	color: #999;
+	font-style: italic;
+}
+.label .content-label{
+	color: #333;
+	margin: 5px 0;
+}
+.content-label .salary{
+	display: flex;
+	margin: 5px 0;
+}
+.salary p:nth-child(1){
+	color: #4bae4f;
+	margin-right: 5px;
+}
+.btn-apply{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+.btn-apply i{
+	font-size: 80px;
+	margin: 5px 0;
+	color: #007bff;
+}
+.btn-apply a{
+	padding: 10px 15px;
+	background-color: #007bff;
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	border-radius: 50px;
+	transition: .4s all;
+}
+.btn-apply a:hover{
+	background-color: #ff6e00;
+}
+.result-keyword{
+	font-size: 20px;
+	color: #444;
+}
+.alert.danger{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+@media screen and (max-width: 1200px){
+	.vacancies{
+		padding: 0;
+	}
+	.header{
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		padding: 5px;
+	}
+	.content{
+		padding: 20px;
+	}
+	form{
+		margin: 15px 0;
+		padding: 0 20px;	
+		width: 100%;
+	}
+	form input{
+		width: 100%;
+	}
+	form .search-btn{
+		width: 100%;
+		margin: 5px 0;
+		padding: 20px;
+	}
+	form i.fab{
+		padding: 10px 30px;
+	}
+	.header img{
+		
+	}
+}

@@ -1,0 +1,234 @@
+body{
+	font-family: Poppins-Regular;
+	background-color: #f5f5f5;
+}
+.apply-form{
+	padding: 100px 200px;
+}
+.apply-form .row{
+	box-shadow: 0 5px 15px rgba(0,0,0,.3);
+}
+.job-apply{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 40px;
+	background-color: #fff;
+	border-radius: 2px;
+	color: #444;
+	height: 60vh;
+}
+.header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 15px 0;
+}
+.header img{
+	width: 100px;
+}
+.header h2{
+	font-size: 28px;
+}
+.header h4{
+	font-size: 25px;
+	color: #007bff;
+}
+.header a{
+	text-decoration: none;
+	color: #007bff;
+	font-weight: bold;
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	padding: 5px 10px;
+}
+.header a:hover{
+	color: #004bff;
+}
+.salary{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+}
+.salary p:nth-child(1){
+	margin-right: 5px;
+	color: #4bae4f;
+}
+.description{
+	margin-top: 5px;
+	font-size: 16px;
+}
+
+.form-bio{
+	padding: 20px 30px;
+	background-color: #fff;
+	border-left: 1px solid #444;
+	height: 60vh;
+}
+.form-bio .information{
+	padding: 20px 0;
+	border-bottom: 1px solid #444;
+}
+.form-bio h3{
+	margin-top: 15px;
+}
+.form-bio input{
+	width: 100%;
+	height: 40px;
+	outline: none;
+	border: none;
+	padding: 15px;
+	font-size: 15px;
+	border-bottom: 2px solid #ccc;
+	background-color: rgba(0,0,0,0);
+	font-family: Poppins-Regular;
+	transition: .4s all;
+}
+.form-bio input:focus{
+	border-bottom: 2px solid #007bff;
+}
+.form-bio textarea{
+	width: 100%;
+	height: 100px;
+	border: none;
+	border-bottom: 2px solid #ccc;
+	outline: none;
+	padding: 15px;
+	font-size: 15px;
+	font-family: Poppins-Regular;
+	transition: .4s all
+}
+.form-bio textarea:focus{
+	border-bottom: 2px solid #007bff;
+}
+
+.form-bio .btn-apply{
+	margin-top: 30px;
+	background-color: #007bff;
+	color: #fff;
+	font-size: 18px;
+	padding: 5px;
+	border: none;
+	border-radius: 2px;
+	transition: .4s all;
+}
+.form-bio .btn-apply:hover{
+	background-color: #ff6e00;
+}
+
+@media screen and (max-width: 1200px){
+	.apply-form{
+		padding: 20px;
+	}
+	.job-apply{
+		height: auto;
+	}
+	.header h2{
+		font-size: 27px;
+		text-align: center;
+	}
+	.form-bio{
+		border: none;
+		border-top: 1px solid #444;
+		height: auto;
+	}
+}
+
+/*
+CONFIRM APPLY*/
+
+.confirm-apply{
+	padding: 100px 300px;
+}
+.card{
+	background-color: #fff;
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+.card .top-card{
+	background-color: #ff6e00;
+	display: flex;
+	padding: 3px 0;
+}
+.top-card h4{
+	color: #fff;
+	margin-left: 10px;
+}
+.top-card h4 i{
+	font-size: 20px;
+	margin-right: 5px;
+}
+.content-card{
+	padding: 30px;
+}
+.header-content-card{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 15px 0;
+	border-bottom: 1px solid #444;
+}
+.header-content-card img{
+	width: 200px;
+}
+.salary{
+	font-size: 16px;
+}
+.label-content-card{
+	text-align: center;
+	margin-top: 15px;
+}
+.label-content-card .description p{
+	margin-top: 5px;
+	cursor: default;
+	transition: .4s all ease-out;
+}
+.label-content-card .description p:hover{
+	color: #444;
+	transform:  scale(1.01);
+}
+.action-card{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 25px;
+}
+.btn{
+	text-decoration: none;
+	padding: 10px 15px;
+	margin: 0 5px;
+	background-color: #007bff;
+	color: #fff;
+	border-radius: 2px;
+	transition: .4s all;
+}
+.btn:hover{
+	background-color: #005bff;
+	transform: scale(1.04);
+}
+.btn-danger{
+	background-color: #F22C2C;
+}
+.btn-danger:hover{
+	background-color: #F00F0F;
+}
+
+@media screen and (max-width: 1200px){
+	.confirm-apply{
+		padding: 20px;
+	}
+	.action-card{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	.action-card a{
+		width: 100%;
+		text-align: center;
+	}
+	.action-card a:hover{
+		transform: scale(1.005);
+	}
+}

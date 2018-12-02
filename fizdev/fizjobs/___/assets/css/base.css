@@ -1,0 +1,81 @@
+@font-face{
+	src: url(../fonts/roboto/Roboto-Light.ttf);
+	font-family: Roboto-Light;
+}
+@font-face{
+	src: url(../fonts/roboto/Roboto-Regular.ttf);
+	font-family: Roboto-Regular;
+}
+@font-face{
+	src: url(../fonts/roboto/Roboto-Bold.ttf);
+	font-family: Roboto-Bold;
+}
+@font-face{
+	src: url(../fonts/poppins/poppins-v5-latin-regular.ttf);
+	font-family: Poppins-Regular;
+}
+@font-face{
+	src: url("../fonts/captha/hyper-9.ttf");
+	font-family: Captcha-Code;
+}
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: Roboto-Light;
+}
+.container{
+	padding: 0 200px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.accounts .row{
+	box-shadow: 0 10px 10px rgba(0,0,0,.2)
+}
+.col-1{flex: none;width: calc(100%/12*1)}
+.col-2{flex: none;width: calc(100%/12*2)}
+.col-3{flex: none;width: calc(100%/12*3)}
+.col-4{flex: none;width: calc(100%/12*4)}
+.col-5{flex: none;width: calc(100%/12*5)}
+.col-6{flex: none;width: calc(100%/12*6)}
+.col-7{flex: none;width: calc(100%/12*7)}
+.col-8{flex: none;width: calc(100%/12*8)}
+.col-9{flex: none;width: calc(100%/12*9)}
+.col-10{flex: none;width: calc(100%/12*10)}
+.col-11{flex: none;width: calc(100%/12*11)}
+.col-12{flex: none;width: calc(100%/12*12)}
+
+@media screen and (min-width: 768px){
+	.col-md-1{flex: none;width: calc(100%/12*1)}
+	.col-md-2{flex: none;width: calc(100%/12*2)}
+	.col-md-3{flex: none;width: calc(100%/12*3)}
+	.col-md-4{flex: none;width: calc(100%/12*4)}
+	.col-md-5{flex: none;width: calc(100%/12*5)}
+	.col-md-6{flex: none;width: calc(100%/12*6)}
+	.col-md-7{flex: none;width: calc(100%/12*7)}
+	.col-md-8{flex: none;width: calc(100%/12*8)}
+	.col-md-9{flex: none;width: calc(100%/12*9)}
+	.col-md-10{flex: none;width: calc(100%/12*10)}
+	.col-md-11{flex: none;width: calc(100%/12*11)}
+	.col-md-12{flex: none;width: calc(100%/12*12)}
+}
+@media screen and (max-width: 1200px){
+	.container{
+		padding: 0;
+	}
+	.topnav .col-md-6{flex: none;width: calc(100%/12*6*2)}
+	.accounts .col-md-6{flex: none;width: calc(100%/12*6*2)}
+	.account-profile .col-md-6{flex: none;width: calc(100%/12*6*2)}
+	.jobs .col-md-10{flex: none;width: calc(100%/12*12)}
+	.jobs .col-md-2{flex: none;width: calc(100%/12*12)}
+	.jobs .col-md-9{flex: none;width: calc(100%/12*12)}
+	.jobs .col-md-3{flex: none;width: calc(100%/12*12)}
+	.panel-home-support .col-md-3{flex: none;width: calc(100%/12*3)}
+	.apply-form .col-md-6{flex: none;width: calc(100%/12*6*2)}
+}
+
+
